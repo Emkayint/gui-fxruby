@@ -21,6 +21,6 @@ alphabetLowerCase = ("a".."z").to_a
 alphabetUpperCase = ("A".."Z").to_a
 allPossibleChars = (33..126).map{|a| a.chr}
 
-p = generatePassword(20, numbers + alphabetLowerCase + alphabetUpperCase)
+p = generatePassword(20, allPossibleChars)
 
 puts p
